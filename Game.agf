@@ -2460,29 +2460,29 @@
             <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
             <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
             <AnimationDelay>4</AnimationDelay>
-            <BlinkingView>0</BlinkingView>
+            <BlinkingView>3</BlinkingView>
             <Clickable>True</Clickable>
             <DiagonalLoops>True</DiagonalLoops>
             <ID>0</ID>
-            <IdleAnimationDelay>9</IdleAnimationDelay>
+            <IdleAnimationDelay>4</IdleAnimationDelay>
             <IdleDelay>20</IdleDelay>
-            <IdleView>0</IdleView>
+            <IdleView>3</IdleView>
             <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
-            <MovementSpeed>4</MovementSpeed>
-            <MovementSpeedX>3</MovementSpeedX>
+            <MovementSpeed>10</MovementSpeed>
+            <MovementSpeedX>0</MovementSpeedX>
             <MovementSpeedY>0</MovementSpeedY>
-            <NormalView>1</NormalView>
+            <NormalView>3</NormalView>
             <Properties />
-            <RealName>Roger</RealName>
-            <ScriptName>cEgo</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <ScriptName>Graggle</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
-            <SpeechView>0</SpeechView>
-            <StartX>127</StartX>
-            <StartY>142</StartY>
+            <SpeechView>3</SpeechView>
+            <StartX>101</StartX>
+            <StartY>146</StartY>
             <StartingRoom>1</StartingRoom>
-            <ThinkingView>0</ThinkingView>
+            <ThinkingView>3</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -2490,9 +2490,9 @@
             <UseRoomAreaScaling>True</UseRoomAreaScaling>
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
-              <Event Index="0">cEgo_Look</Event>
-              <Event Index="1">cEgo_Interact</Event>
-              <Event Index="2">cEgo_Talk</Event>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
               <Event Index="3" />
               <Event Index="4" />
               <Event Index="5" />
@@ -4743,6 +4743,54 @@
               <ImportAlphaChannel>False</ImportAlphaChannel>
             </Source>
           </Sprite>
+          <Sprite Slot="5" Width="32" Height="32" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>C:\Users\jmancini\Downloads\Graggle\Graggle0.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>32</ImportHeight>
+              <ImportWidth>32</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>True</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <TransparentColorIndex>0</TransparentColorIndex>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="6" Width="32" Height="32" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>C:\Users\jmancini\Downloads\Graggle\Graggle1.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>32</ImportHeight>
+              <ImportWidth>32</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>True</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <TransparentColorIndex>0</TransparentColorIndex>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
+          <Sprite Slot="7" Width="32" Height="32" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+            <Source>
+              <FileName>C:\Users\jmancini\Downloads\Graggle\Graggle2.png</FileName>
+              <OffsetX>0</OffsetX>
+              <OffsetY>0</OffsetY>
+              <ImportHeight>32</ImportHeight>
+              <ImportWidth>32</ImportWidth>
+              <ImportAsTile>False</ImportAsTile>
+              <Frame>0</Frame>
+              <RemapToGamePalette>True</RemapToGamePalette>
+              <RemapToRoomPalette>False</RemapToRoomPalette>
+              <ImportMethod>LeaveAsIs</ImportMethod>
+              <TransparentColorIndex>0</TransparentColorIndex>
+              <ImportAlphaChannel>True</ImportAlphaChannel>
+            </Source>
+          </Sprite>
         </Sprites>
       </SpriteFolder>
     </Sprites>
@@ -4978,7 +5026,7 @@
           </View>
           <View>
             <ID>2</ID>
-            <Name>VIEW2</Name>
+            <Name>OClock</Name>
             <Loops>
               <Loop>
                 <ID>0</ID>
@@ -5010,6 +5058,120 @@
                     <Flipped>False</Flipped>
                     <ID>3</ID>
                     <Image>4</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>3</ID>
+            <Name>Graggle</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>5</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>1</ID>
+                    <Image>6</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>2</ID>
+                    <Image>7</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>True</Flipped>
+                    <ID>0</ID>
+                    <Image>5</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>True</Flipped>
+                    <ID>1</ID>
+                    <Image>6</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>True</Flipped>
+                    <ID>2</ID>
+                    <Image>7</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>5</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>1</ID>
+                    <Image>6</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>2</ID>
+                    <Image>7</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>5</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>1</ID>
+                    <Image>6</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>2</ID>
+                    <Image>7</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                 </Frames>
