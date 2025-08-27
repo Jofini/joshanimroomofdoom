@@ -658,6 +658,10 @@
             <Description IsNull="True" />
             <Number>1</Number>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Description IsNull="True" />
+            <Number>2</Number>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -2457,35 +2461,35 @@
         <SubFolders />
         <Characters>
           <Character>
-            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
-            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <AdjustSpeedWithScaling>True</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>True</AdjustVolumeWithScaling>
             <AnimationDelay>4</AnimationDelay>
-            <BlinkingView>3</BlinkingView>
+            <BlinkingView>4</BlinkingView>
             <Clickable>True</Clickable>
             <DiagonalLoops>True</DiagonalLoops>
             <ID>0</ID>
             <IdleAnimationDelay>4</IdleAnimationDelay>
-            <IdleDelay>20</IdleDelay>
-            <IdleView>3</IdleView>
-            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
-            <MovementSpeed>10</MovementSpeed>
-            <MovementSpeedX>0</MovementSpeedX>
-            <MovementSpeedY>0</MovementSpeedY>
-            <NormalView>3</NormalView>
+            <IdleDelay>0</IdleDelay>
+            <IdleView>4</IdleView>
+            <MovementLinkedToAnimation>False</MovementLinkedToAnimation>
+            <MovementSpeed>5</MovementSpeed>
+            <MovementSpeedX>10</MovementSpeedX>
+            <MovementSpeedY>10</MovementSpeedY>
+            <NormalView>4</NormalView>
             <Properties />
-            <RealName xml:space="preserve">New character</RealName>
-            <ScriptName>Graggle</ScriptName>
+            <RealName>Flick</RealName>
+            <ScriptName>Flick</ScriptName>
             <Solid>True</Solid>
             <SpeechAnimationDelay>5</SpeechAnimationDelay>
             <SpeechColor>12</SpeechColor>
-            <SpeechView>3</SpeechView>
-            <StartX>101</StartX>
-            <StartY>146</StartY>
-            <StartingRoom>1</StartingRoom>
-            <ThinkingView>3</ThinkingView>
+            <SpeechView>4</SpeechView>
+            <StartX>124</StartX>
+            <StartY>405</StartY>
+            <StartingRoom>2</StartingRoom>
+            <ThinkingView>4</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
-            <UniformMovementSpeed>True</UniformMovementSpeed>
+            <UniformMovementSpeed>False</UniformMovementSpeed>
             <UseRoomAreaLighting>True</UseRoomAreaLighting>
             <UseRoomAreaScaling>True</UseRoomAreaScaling>
             <Interactions>
@@ -4225,6 +4229,75 @@
                   </Sprite>
                 </Sprites>
               </SpriteFolder>
+              <SpriteFolder Name="Flick">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="8" Width="170" Height="75" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\Users\jmancini\Documents\Piskel\MinnowGIF.gif</FileName>
+                      <OffsetX>40</OffsetX>
+                      <OffsetY>80</OffsetY>
+                      <ImportHeight>75</ImportHeight>
+                      <ImportWidth>170</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>True</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <TransparentColorIndex>0</TransparentColorIndex>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="9" Width="150" Height="90" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\Users\jmancini\Documents\Piskel\MinnowGIF.gif</FileName>
+                      <OffsetX>55</OffsetX>
+                      <OffsetY>75</OffsetY>
+                      <ImportHeight>90</ImportHeight>
+                      <ImportWidth>150</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>1</Frame>
+                      <RemapToGamePalette>True</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <TransparentColorIndex>0</TransparentColorIndex>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="10" Width="150" Height="90" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\Users\jmancini\Documents\Piskel\MinnowGIF.gif</FileName>
+                      <OffsetX>55</OffsetX>
+                      <OffsetY>75</OffsetY>
+                      <ImportHeight>90</ImportHeight>
+                      <ImportWidth>150</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>2</Frame>
+                      <RemapToGamePalette>True</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <TransparentColorIndex>0</TransparentColorIndex>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="11" Width="150" Height="90" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\Users\jmancini\Documents\Piskel\MinnowGIF.gif</FileName>
+                      <OffsetX>55</OffsetX>
+                      <OffsetY>75</OffsetY>
+                      <ImportHeight>90</ImportHeight>
+                      <ImportWidth>150</ImportWidth>
+                      <ImportAsTile>True</ImportAsTile>
+                      <Frame>3</Frame>
+                      <RemapToGamePalette>True</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <TransparentColorIndex>0</TransparentColorIndex>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
             </SubFolders>
             <Sprites>
               <Sprite Slot="2000" Width="25" Height="50" ColorDepth="32" Resolution="Real" AlphaChannel="True">
@@ -5172,6 +5245,148 @@
                     <Flipped>False</Flipped>
                     <ID>2</ID>
                     <Image>7</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>4</ID>
+            <Name>Flick</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>8</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>1</ID>
+                    <Image>9</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>2</ID>
+                    <Image>10</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>3</ID>
+                    <Image>11</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>True</Flipped>
+                    <ID>0</ID>
+                    <Image>8</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>True</Flipped>
+                    <ID>1</ID>
+                    <Image>9</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>True</Flipped>
+                    <ID>2</ID>
+                    <Image>10</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>True</Flipped>
+                    <ID>3</ID>
+                    <Image>11</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>8</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>1</ID>
+                    <Image>9</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>2</ID>
+                    <Image>10</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>3</ID>
+                    <Image>11</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>True</Flipped>
+                    <ID>0</ID>
+                    <Image>8</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>True</Flipped>
+                    <ID>1</ID>
+                    <Image>9</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>True</Flipped>
+                    <ID>2</ID>
+                    <Image>10</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>True</Flipped>
+                    <ID>3</ID>
+                    <Image>11</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                 </Frames>
