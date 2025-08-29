@@ -662,6 +662,10 @@
             <Description IsNull="True" />
             <Number>2</Number>
           </UnloadedRoom>
+          <UnloadedRoom>
+            <Description IsNull="True" />
+            <Number>3</Number>
+          </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
     </Rooms>
@@ -2461,18 +2465,18 @@
         <SubFolders />
         <Characters>
           <Character>
-            <AdjustSpeedWithScaling>True</AdjustSpeedWithScaling>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
             <AdjustVolumeWithScaling>True</AdjustVolumeWithScaling>
-            <AnimationDelay>4</AnimationDelay>
+            <AnimationDelay>2</AnimationDelay>
             <BlinkingView>4</BlinkingView>
             <Clickable>True</Clickable>
             <DiagonalLoops>True</DiagonalLoops>
             <ID>0</ID>
-            <IdleAnimationDelay>4</IdleAnimationDelay>
+            <IdleAnimationDelay>10</IdleAnimationDelay>
             <IdleDelay>0</IdleDelay>
             <IdleView>4</IdleView>
             <MovementLinkedToAnimation>False</MovementLinkedToAnimation>
-            <MovementSpeed>5</MovementSpeed>
+            <MovementSpeed>10</MovementSpeed>
             <MovementSpeedX>10</MovementSpeedX>
             <MovementSpeedY>10</MovementSpeedY>
             <NormalView>4</NormalView>
@@ -2480,16 +2484,60 @@
             <RealName>Flick</RealName>
             <ScriptName>Flick</ScriptName>
             <Solid>True</Solid>
-            <SpeechAnimationDelay>5</SpeechAnimationDelay>
-            <SpeechColor>12</SpeechColor>
+            <SpeechAnimationDelay>4</SpeechAnimationDelay>
+            <SpeechColor>65520</SpeechColor>
             <SpeechView>4</SpeechView>
-            <StartX>124</StartX>
-            <StartY>405</StartY>
-            <StartingRoom>2</StartingRoom>
+            <StartX>1158</StartX>
+            <StartY>857</StartY>
+            <StartingRoom>3</StartingRoom>
             <ThinkingView>4</ThinkingView>
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
-            <UniformMovementSpeed>False</UniformMovementSpeed>
+            <UniformMovementSpeed>True</UniformMovementSpeed>
+            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <UseRoomAreaScaling>True</UseRoomAreaScaling>
+            <Interactions>
+              <ScriptModule>GlobalScript.asc</ScriptModule>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <AnimationDelay>4</AnimationDelay>
+            <BlinkingView>5</BlinkingView>
+            <Clickable>True</Clickable>
+            <DiagonalLoops>True</DiagonalLoops>
+            <ID>1</ID>
+            <IdleAnimationDelay>10</IdleAnimationDelay>
+            <IdleDelay>0</IdleDelay>
+            <IdleView>5</IdleView>
+            <MovementLinkedToAnimation>True</MovementLinkedToAnimation>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>0</MovementSpeedX>
+            <MovementSpeedY>0</MovementSpeedY>
+            <NormalView>5</NormalView>
+            <Properties />
+            <RealName>Crayfish</RealName>
+            <ScriptName>Crayfish</ScriptName>
+            <Solid>True</Solid>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <SpeechView>5</SpeechView>
+            <StartX>197</StartX>
+            <StartY>1182</StartY>
+            <StartingRoom>3</StartingRoom>
+            <ThinkingView>5</ThinkingView>
+            <TurnBeforeWalking>True</TurnBeforeWalking>
+            <TurnWhenFacing>True</TurnWhenFacing>
+            <UniformMovementSpeed>True</UniformMovementSpeed>
             <UseRoomAreaLighting>True</UseRoomAreaLighting>
             <UseRoomAreaScaling>True</UseRoomAreaScaling>
             <Interactions>
@@ -4298,6 +4346,59 @@
                   </Sprite>
                 </Sprites>
               </SpriteFolder>
+              <SpriteFolder Name="Crayfish">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="12" Width="250" Height="250" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\Users\jmancini\Documents\Piskel\Piskel\CrayfishGIF.gif</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>250</ImportHeight>
+                      <ImportWidth>250</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>True</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <TransparentColorIndex>0</TransparentColorIndex>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="13" Width="250" Height="250" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\Users\jmancini\Documents\Piskel\Piskel\CrayfishGIF.gif</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>250</ImportHeight>
+                      <ImportWidth>250</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>1</Frame>
+                      <RemapToGamePalette>True</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <TransparentColorIndex>0</TransparentColorIndex>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="14" Width="250" Height="250" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>C:\Users\jmancini\Documents\Piskel\Piskel\CrayfishGIF.gif</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>250</ImportHeight>
+                      <ImportWidth>250</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>2</Frame>
+                      <RemapToGamePalette>True</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <TransparentColorIndex>0</TransparentColorIndex>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
             </SubFolders>
             <Sprites>
               <Sprite Slot="2000" Width="25" Height="50" ColorDepth="32" Resolution="Real" AlphaChannel="True">
@@ -5260,28 +5361,28 @@
                 <RunNextLoop>False</RunNextLoop>
                 <Frames>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>False</Flipped>
                     <ID>0</ID>
                     <Image>8</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>False</Flipped>
                     <ID>1</ID>
                     <Image>9</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>False</Flipped>
                     <ID>2</ID>
                     <Image>10</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>False</Flipped>
                     <ID>3</ID>
                     <Image>11</Image>
@@ -5294,28 +5395,28 @@
                 <RunNextLoop>False</RunNextLoop>
                 <Frames>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>True</Flipped>
                     <ID>0</ID>
                     <Image>8</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>True</Flipped>
                     <ID>1</ID>
                     <Image>9</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>True</Flipped>
                     <ID>2</ID>
                     <Image>10</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>True</Flipped>
                     <ID>3</ID>
                     <Image>11</Image>
@@ -5328,28 +5429,28 @@
                 <RunNextLoop>False</RunNextLoop>
                 <Frames>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>False</Flipped>
                     <ID>0</ID>
                     <Image>8</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>False</Flipped>
                     <ID>1</ID>
                     <Image>9</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>False</Flipped>
                     <ID>2</ID>
                     <Image>10</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>False</Flipped>
                     <ID>3</ID>
                     <Image>11</Image>
@@ -5362,34 +5463,98 @@
                 <RunNextLoop>False</RunNextLoop>
                 <Frames>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>True</Flipped>
                     <ID>0</ID>
                     <Image>8</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>True</Flipped>
                     <ID>1</ID>
                     <Image>9</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>True</Flipped>
                     <ID>2</ID>
                     <Image>10</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                   <ViewFrame>
-                    <Delay>0</Delay>
+                    <Delay>2</Delay>
                     <Flipped>True</Flipped>
                     <ID>3</ID>
                     <Image>11</Image>
                     <Sound>0</Sound>
                   </ViewFrame>
                 </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>5</ID>
+            <Name>Crayfish</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>12</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>1</ID>
+                    <Image>13</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>2</ID>
+                    <Image>14</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <Delay>0</Delay>
+                    <Flipped>False</Flipped>
+                    <ID>0</ID>
+                    <Image>0</Image>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames />
               </Loop>
             </Loops>
           </View>
