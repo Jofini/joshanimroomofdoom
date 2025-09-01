@@ -2510,7 +2510,7 @@
           </Character>
           <Character>
             <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
-            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <AdjustVolumeWithScaling>True</AdjustVolumeWithScaling>
             <AnimationDelay>4</AnimationDelay>
             <BlinkingView>5</BlinkingView>
             <Clickable>True</Clickable>
@@ -2538,7 +2538,7 @@
             <TurnBeforeWalking>True</TurnBeforeWalking>
             <TurnWhenFacing>True</TurnWhenFacing>
             <UniformMovementSpeed>True</UniformMovementSpeed>
-            <UseRoomAreaLighting>True</UseRoomAreaLighting>
+            <UseRoomAreaLighting>False</UseRoomAreaLighting>
             <UseRoomAreaScaling>True</UseRoomAreaScaling>
             <Interactions>
               <ScriptModule>GlobalScript.asc</ScriptModule>
@@ -5566,6 +5566,30 @@
       <ScriptFolder Name="Main">
         <SubFolders />
         <ScriptAndHeaders>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>Crayfish.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1220500158</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>Crayfish.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1220500158</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
           <ScriptAndHeader>
             <ScriptAndHeader_Header>
               <Script>
